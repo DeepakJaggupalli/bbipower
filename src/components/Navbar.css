@@ -19,8 +19,10 @@
   font-weight: 800;
 }
 
-.logo-icon {
-  color: var(--accent-orange);
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
 }
 
 .nav-links {

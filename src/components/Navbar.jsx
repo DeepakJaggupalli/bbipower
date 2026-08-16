@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -7,7 +6,7 @@ export default function Navbar() {
     <nav className="glass-nav navbar">
       <div className="container nav-container">
         <Link to="/" className="nav-logo">
-          <Zap className="logo-icon" />
+          <img src="/images/logo.jpg" alt="BBI Power" className="logo-img" />
           <span className="text-gradient">BBI Power</span>
         </Link>
         <div className="nav-links">

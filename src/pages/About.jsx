@@ -4,10 +4,10 @@ import './About.css';
 
 export default function About() {
   const directors = [
-    { name: "Subrahmanyam Kassetty", role: "Managing Director" },
-    { name: "K. V. Mukesh Babu", role: "Director" },
-    { name: "K. V. Chaitanya", role: "Director" },
-    { name: "Sujatha Kassetty", role: "Director" }
+    { name: "Sagi Ramesh Babu", role: "Director", image: "/images/sagi_ramesh_babu.jpg" },
+    { name: "K. V. Mukesh Babu", role: "Director", image: "/images/k_mukesh.png" },
+    { name: "K. V. Chaitanya", role: "Director", image: "/images/kv_chaitanya.png" },
+    { name: "Subrahmanyam Kassetty", role: "Managing Director", image: "/images/subrahmanyam.jpg" }
   ];
 
   return (
@@ -70,6 +70,7 @@ export default function About() {
         <div className="grid-2 mt-3">
           {directors.map((director, index) => (
             <div key={index} className="director-card">
+              <img src={director.image} alt={director.name} className="director-img" />
               <h3>{director.name}</h3>
               <span className="role">{director.role}</span>
             </div>
