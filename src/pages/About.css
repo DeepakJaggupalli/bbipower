@@ -36,18 +36,19 @@
 }
 
 .director-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid var(--border-light);
   text-align: center;
   transition: all 0.3s ease;
+  box-shadow: var(--shadow-light);
 }
 
 .director-card:hover {
-  background: rgba(255, 255, 255, 0.05);
   transform: translateY(-5px);
   border-color: var(--accent-blue);
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
 }
 
 .director-card h3 {

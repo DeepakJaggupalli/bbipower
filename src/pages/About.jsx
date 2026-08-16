@@ -4,10 +4,10 @@ import './About.css';
 
 export default function About() {
   const directors = [
-    { name: "Sagi Ramesh Babu", role: "Director", image: "/images/sagi_ramesh_babu.jpg" },
+    { name: "Subrahmanyam Kassetty", role: "Founder & Managing Director", image: "/images/subrahmanyam_new.jpg" },
     { name: "K. V. Mukesh Babu", role: "Director", image: "/images/k_mukesh.png" },
     { name: "K. V. Chaitanya", role: "Director", image: "/images/kv_chaitanya.png" },
-    { name: "Subrahmanyam Kassetty", role: "Managing Director", image: "/images/subrahmanyam.jpg" }
+    { name: "Sagi Ramesh Babu", role: "Director", image: "/images/sagi_ramesh_babu.jpg" }
   ];
 
   return (

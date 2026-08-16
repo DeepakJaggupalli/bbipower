@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.hero-wrapper {
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/images/hero_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
 .hero-section {
   min-height: 80vh;
   display: flex;
@@ -12,7 +21,7 @@
 }
 
 .hero-icon {
-  color: var(--accent-blue);
+  color: var(--accent-orange);
   margin-bottom: 2rem;
   animation: float 6s ease-in-out infinite;
 }
@@ -21,12 +30,14 @@
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: white;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto 3rem auto;
+  color: #e2e8f0;
 }
 
 .hero-actions {
