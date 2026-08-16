@@ -1,0 +1,64 @@
+.about-page {
+  padding-top: 4rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-card {
+  padding: 2.5rem;
+}
+
+.info-icon {
+  color: var(--accent-orange);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.management-section {
+  padding: 3rem;
+}
+
+.director-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.director-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+  border-color: var(--accent-blue);
+}
+
+.director-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.director-card .role {
+  color: var(--accent-orange);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
