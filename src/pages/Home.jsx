@@ -5,7 +5,7 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <div className="home-page">
+    <div id="home" className="home-page">
       <div className="hero-wrapper">
         <section className="hero-section container">
           <motion.div 
@@ -23,12 +23,12 @@ export default function Home() {
               A state-of-the-art 520 MW Coal-Fired Thermal Power Project located in the Nellore District of Andhra Pradesh, India.
             </p>
             <div className="hero-actions">
-              <Link to="/project" className="btn">
+              <a href="#project" className="btn">
                 Explore Project <ArrowRight size={18} style={{ verticalAlign: 'middle', marginLeft: '8px' }} />
-              </Link>
-              <Link to="/about" className="btn btn-outline" style={{ color: 'white', borderColor: 'white' }}>
+              </a>
+              <a href="#about" className="btn btn-outline" style={{ color: 'white', borderColor: 'white' }}>
                 Learn About Us
-              </Link>
+              </a>
             </div>
           </motion.div>
         </section>

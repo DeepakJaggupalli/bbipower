@@ -14,7 +14,7 @@ export default function Clearances() {
   ];
 
   return (
-    <div className="container section">
+    <div id="clearances" className="container section">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

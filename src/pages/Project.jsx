@@ -10,7 +10,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="container section">
+    <div id="project" className="container section">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

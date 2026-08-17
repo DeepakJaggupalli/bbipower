@@ -3,7 +3,7 @@ import { MapPin, Building, Landmark, Mail } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <div className="container section">
+    <div id="contact" className="container section">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
