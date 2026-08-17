@@ -21,10 +21,10 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
-          style={{ marginBottom: '4rem' }}
+          style={{ marginBottom: '4rem', color: 'white' }}
         >
-          <h1><span className="text-gradient">Contact Details</span></h1>
-          <p>Get in touch with BBI Power Krishnapatnam Company.</p>
+          <h1><span className="text-gradient" style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' }}>Contact Details</span></h1>
+          <p style={{ color: 'rgba(255,255,255,0.9)' }}>Get in touch with BBI Power Krishnapatnam Company.</p>
         </motion.div>
 
       <div style={{ maxWidth: '600px', margin: '0 auto' }}>
