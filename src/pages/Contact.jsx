@@ -27,16 +27,6 @@ export default function Contact() {
             <h2 style={{ margin: 0 }}>Corporate Office</h2>
           </div>
           
-          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', color: 'var(--text-secondary)' }}>
-            <MapPin style={{ flexShrink: 0, color: 'var(--accent-blue)' }} />
-            <p style={{ margin: 0 }}>
-              <strong>Registered Address:</strong><br />
-              Flat No. 501, New Life Apartments,<br />
-              Opp. Chest Hospital, Near Chaitanya College,<br />
-              Hyderabad, Telangana, India - 500038
-            </p>
-          </div>
-          
           <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-secondary)' }}>
             <Landmark style={{ flexShrink: 0, color: 'var(--accent-blue)' }} />
             <p style={{ margin: 0 }}>

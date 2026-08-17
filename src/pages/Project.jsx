@@ -4,7 +4,7 @@ import { Settings, Droplet, Fuel, Activity } from 'lucide-react';
 export default function Project() {
   const highlights = [
     { title: "Capacity", value: "520 MW (2 x 260 MW)", icon: <Activity /> },
-    { title: "Project Cost", value: "INR 30,000 million (Approx Rs 4200 Cr)", icon: <Settings /> },
+    { title: "Project Cost", value: "INR 30,000 million (Approx Rs 4900 Cr)", icon: <Settings /> },
     { title: "Fuel Linkage", value: "Imported Coal (Indonesian company)", icon: <Fuel /> },
     { title: "Water Linkage", value: "Sea Water with Desalination", icon: <Droplet /> }
   ];
