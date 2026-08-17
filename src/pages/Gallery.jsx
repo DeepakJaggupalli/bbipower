@@ -3,21 +3,6 @@ import { motion } from 'framer-motion';
 export default function Gallery() {
   const videos = [
     {
-      id: 1,
-      title: "Industrial Steam",
-      url: "https://videos.pexels.com/video-files/30598869/30598869-uhd_1080_1920_30fps.mp4" 
-    },
-    {
-      id: 2,
-      title: "Power Plant Smoke Stacks",
-      url: "https://videos.pexels.com/video-files/19950813/19950813-uhd_1080_1920_30fps.mp4"
-    },
-    {
-      id: 3,
-      title: "Factory Chimney Smoke",
-      url: "https://videos.pexels.com/video-files/7628844/7628844-uhd_1080_1920_30fps.mp4"
-    },
-    {
       id: 4,
       title: "Factory Emitting Smoke",
       url: "https://videos.pexels.com/video-files/6522160/6522160-hd_1080_1920_24fps.mp4"

@@ -4,16 +4,28 @@ import './Contact.css';
 
 export default function Contact() {
   return (
-    <div id="contact" className="container section">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center"
-        style={{ marginBottom: '4rem' }}
+    <div id="contact" className="contact-wrapper">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="contact-video"
       >
-        <h1><span className="text-gradient">Contact Details</span></h1>
-        <p>Get in touch with BBI Power Krishnapatnam Company.</p>
-      </motion.div>
+        <source src="https://videos.pexels.com/video-files/6522160/6522160-hd_1080_1920_24fps.mp4" type="video/mp4" />
+      </video>
+      <div className="contact-overlay"></div>
+      
+      <div className="container section" style={{ position: 'relative', zIndex: 1 }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center"
+          style={{ marginBottom: '4rem' }}
+        >
+          <h1><span className="text-gradient">Contact Details</span></h1>
+          <p>Get in touch with BBI Power Krishnapatnam Company.</p>
+        </motion.div>
 
       <div style={{ maxWidth: '600px', margin: '0 auto' }}>
         <motion.div 
@@ -74,6 +86,7 @@ export default function Contact() {
             </a>
           </div>
         </motion.div>
+      </div>
       </div>
     </div>
   );
