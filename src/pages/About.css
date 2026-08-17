@@ -37,17 +37,21 @@
 
 .director-card {
   background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 2.5rem 1.5rem;
   border-radius: 16px;
   border: 1px solid var(--border-light);
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .director-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: var(--glow-orange);
+  background: var(--bg-panel-hover);
 }
 
 .director-card h3 {

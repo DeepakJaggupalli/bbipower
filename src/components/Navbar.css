@@ -38,5 +38,6 @@
 
 .nav-links a:hover {
   opacity: 1;
-  color: var(--accent-green);
+  color: var(--accent-blue);
+  text-shadow: var(--glow-blue);
 }

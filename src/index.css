@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --bg-main: #fcfcfc;
-  --bg-panel: #ffffff;
-  --text-primary: #111827; /* Deep charcoal */
-  --text-secondary: #4b5563; /* Soft gray */
+  --bg-main: #020617; /* Very deep midnight blue/black */
+  --bg-panel: rgba(255, 255, 255, 0.03);
+  --bg-panel-hover: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8; /* Slate gray */
   --accent-orange: #f97316; /* From logo */
   --accent-green: #22c55e; /* From logo */
-  --accent-blue: #0ea5e9; /* From logo */
-  --border-light: rgba(0, 0, 0, 0.06);
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-  --shadow-hover: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  --accent-blue: #38bdf8; /* Neon blue */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --glow-orange: 0 0 20px rgba(249, 115, 22, 0.4);
+  --glow-blue: 0 0 20px rgba(56, 189, 248, 0.4);
 }
 
 * {
@@ -28,6 +27,9 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(249, 115, 22, 0.05), transparent 25%);
   color: var(--text-primary);
   overflow-x: hidden;
   min-height: 100vh;
@@ -46,23 +48,26 @@ body {
 /* Panel Utilities */
 .glass-panel {
   background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-light);
   border-radius: 16px;
-  box-shadow: var(--shadow-md);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .glass-panel:hover {
-  box-shadow: var(--shadow-hover);
+  background: var(--bg-panel-hover);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: var(--glow-blue);
   transform: translateY(-4px);
 }
 
 .glass-nav {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
 }
 
 /* Gradients */
@@ -71,6 +76,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  text-shadow: 0 0 30px rgba(249, 115, 22, 0.3);
 }
 
 /* Typography Utilities */
@@ -122,29 +128,31 @@ a {
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
-  background: var(--text-primary);
+  background: linear-gradient(135deg, var(--accent-blue), #2563eb);
   color: white;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--glow-blue);
 }
 
 .btn:hover {
-  background: #000000;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
   color: white;
 }
 
 .btn-outline {
-  background: transparent;
-  border: 2px solid var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid var(--border-light);
   color: var(--text-primary);
   box-shadow: none;
 }
 
 .btn-outline:hover {
-  background: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
   color: white !important;
-  border-color: var(--text-primary) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Cards Grid */
@@ -166,23 +174,23 @@ a {
   border-collapse: separate;
   border-spacing: 0;
   margin-top: 1.5rem;
-  background: white;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
 }
 
 .data-table th, .data-table td {
   padding: 1.25rem 1.5rem;
   text-align: left;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .data-table th {
-  background-color: #f9fafb;
+  background-color: rgba(255, 255, 255, 0.05);
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--accent-blue);
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
@@ -193,7 +201,7 @@ a {
 }
 
 .data-table tr:hover td {
-  background-color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Responsive Media Queries */
