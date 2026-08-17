@@ -14,7 +14,7 @@ export default function Home() {
           playsInline 
           className="hero-video"
         >
-          <source src="https://videos.pexels.com/video-files/34432560/14588278_2560_1440_24fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/35923575/15240393_1080_1920_30fps.mp4" type="video/mp4" />
         </video>
         <div className="hero-overlay"></div>
         <section className="hero-section container">
