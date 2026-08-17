@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Building, Landmark, Mail } from 'lucide-react';
+import { Landmark } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -14,30 +14,10 @@ export default function Contact() {
         <p>Get in touch with BBI Power Krishnapatnam Company.</p>
       </motion.div>
 
-      <div className="grid-2">
+      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="glass-panel"
-          style={{ padding: '3rem' }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-            <Building style={{ color: 'var(--accent-orange)' }} size={32} />
-            <h2 style={{ margin: 0 }}>Corporate Office</h2>
-          </div>
-          
-          <div style={{ display: 'flex', gap: '1rem', color: 'var(--text-secondary)' }}>
-            <Landmark style={{ flexShrink: 0, color: 'var(--accent-blue)' }} />
-            <p style={{ margin: 0 }}>
-              <strong>CIN:</strong> U40109TG1996ULT025658
-            </p>
-          </div>
-        </motion.div>
-
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="glass-panel"
           style={{ padding: '3rem' }}
