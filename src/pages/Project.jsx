@@ -56,10 +56,16 @@ export default function Project() {
             The proposed 2x260 MW coal-based thermal power station incorporates state-of-the-art engineering, procurement, and construction (EPC) standards. 
           </p>
           <p>
-            <strong>Power Evacuation:</strong> The project is designed to international and Indian standards, and will pump power directly into the 400 KV system of AP Transco, which in turn connects to the National Grid.
+            <strong>Land Availability:</strong> 832 Acres of land have been officially earmarked for the BBI Project, complete with designated areas for the power plant, ash pond, jetty location, and switchyard.
           </p>
           <p>
-            <strong>Fuel Logistics:</strong> Imported coal will be transported on self-discharging bulk carriers fitted with high-speed cranes and clamshell grabs. The coal will be discharged to barges for transfer to a dedicated unloading jetty.
+            <strong>Financing:</strong> The estimated completed capital cost is structured through a Debt to Equity ratio of 75:25, demonstrating strong institutional confidence in the project's viability.
+          </p>
+          <p>
+            <strong>Power Evacuation:</strong> Designed to international and Indian standards, the plant will pump power directly into the 400 KV system of AP Transco, which in turn connects to the National Grid.
+          </p>
+          <p>
+            <strong>Fuel Logistics:</strong> Imported coal will be transported on self-discharging bulk carriers fitted with high-speed cranes and clamshell grabs.
           </p>
           <p>
             <strong>Cooling and Water:</strong> The project utilizes a sea water cooling tower system for turbine condensers, minimizing the thermal impact on coastal waters. Sweet water requirements will be met entirely by desalinating sea water.
