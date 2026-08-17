@@ -7,12 +7,23 @@ export default function Home() {
   return (
     <div id="home" className="home-page">
       <div className="hero-wrapper">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="hero-video"
+        >
+          <source src="https://videos.pexels.com/video-files/34432560/14588278_2560_1440_24fps.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-overlay"></div>
         <section className="hero-section container">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="hero-content text-center"
+            style={{ position: 'relative', zIndex: 2 }}
           >
             <Factory size={64} className="hero-icon" />
             <h1 className="hero-title">
