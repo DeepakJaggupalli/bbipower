@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Factory } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -25,7 +25,6 @@ export default function Home() {
             className="hero-content text-center"
             style={{ position: 'relative', zIndex: 2 }}
           >
-            <Factory size={64} className="hero-icon" />
             <h1 className="hero-title">
               Powering the Future with <br/>
               <span className="text-gradient">BBI Power Krishnapatnam</span>
