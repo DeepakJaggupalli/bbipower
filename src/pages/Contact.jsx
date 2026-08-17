@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Landmark } from 'lucide-react';
+import './Contact.css';
 
 export default function Contact() {
   return (
@@ -54,6 +55,23 @@ export default function Contact() {
               Plot No. 109, D.No. 13-1-215,<br />
               Moti Nagar, Hyderabad, Telangana, India - 500018
             </p>
+          </div>
+
+          <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--border-light)' }}>
+            <h3 style={{ marginBottom: '1rem' }}>Get in touch with us</h3>
+            <a 
+              href="https://wa.me/917416966659" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="whatsapp-btn"
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                style={{ width: '24px', height: '24px' }}
+              />
+              Chat with Ramesh Babu
+            </a>
           </div>
         </motion.div>
       </div>

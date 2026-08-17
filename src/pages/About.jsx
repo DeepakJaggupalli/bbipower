@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, History, Target } from 'lucide-react';
+import { Users } from 'lucide-react';
 import './About.css';
 
 export default function About() {
@@ -26,31 +26,26 @@ export default function About() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="glass-panel info-card"
+          style={{ display: 'flex', alignItems: 'center' }}
         >
-          <History className="info-icon" />
-          <h2>Our History</h2>
-          <p>
-            BBI Power Krishnapatnam Company was established for the purpose of developing, operating, and maintaining a 2x260 MW Thermal Power Station at Krishnapatnam in the State of Andhra Pradesh, India.
-          </p>
-          <p>
-            The company was awarded the project through an International Competitive Bidding (ICB) process and has successfully obtained key clearances and approvals to establish a robust infrastructure.
-          </p>
+          <img 
+            src="/images/project_2.jpg" 
+            alt="Power Plant Overview" 
+            style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
+          />
         </motion.div>
-
+        
         <motion.div 
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="glass-panel info-card"
         >
-          <Target className="info-icon" />
-          <h2>Our Mission</h2>
+          <h2 style={{ color: 'var(--accent-blue)', marginBottom: '1.5rem' }}>Project History</h2>
           <p>
-            To deliver highly efficient, low-cost electricity to the people of Andhra Pradesh while adhering to the highest environmental and technical standards.
+            Located 15 miles from the town of Nellore on the East coast of India, the project was originally conceived in 1990. Following the Indian Government's privatization program, it became the <strong>first competitively bid and awarded project under India's energy reform guidelines.</strong>
           </p>
           <p>
-            We are dedicated to establishing partnerships with major infrastructure groups to implement and run the power plant seamlessly, ensuring a sustainable energy supply for the nation.
+            After an international competitive bidding process, BBI Power signed a Letter of Intent with the Andhra Pradesh State Electricity Board (APSEB) in July 1996. This was followed by a 30-year Initial Power Purchase Agreement.
           </p>
         </motion.div>
       </div>
@@ -61,9 +56,8 @@ export default function About() {
         viewport={{ once: true }}
         className="management-section glass-panel mt-5"
       >
-        <div className="text-center">
-          <Users className="info-icon mx-auto" />
-          <h2>Board of Directors</h2>
+        <div className="text-center" style={{ marginBottom: '3rem' }}>
+          <h2 style={{ color: 'var(--accent-orange)' }}>Board of Directors</h2>
           <p>Guided by experienced leadership.</p>
         </div>
         

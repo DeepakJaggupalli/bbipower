@@ -43,24 +43,41 @@ export default function Project() {
         ))}
       </div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="glass-panel"
-        style={{ marginTop: '4rem', padding: '3rem' }}
-      >
-        <h2 style={{ color: 'var(--accent-orange)', marginBottom: '1.5rem' }}>Detailed Overview</h2>
-        <p>
-          The proposed 2x260 MW coal-based thermal power station by BBI-Power Krishnapatnam Company is designed to utilize imported fuel. The project incorporates state-of-the-art engineering, procurement, and construction (EPC) standards.
-        </p>
-        <p>
-          <strong>Cooling and Water:</strong> The project proposes to use a sea water cooling tower system to provide circulating water for the turbine condensers. This minimizes the impact on the thermal environment of coastal waters. The sweet water requirements will be met by desalinating the sea water.
-        </p>
-        <p>
-          <strong>Power Evacuation:</strong> Power will be pumped into the 400 KV system of the AP Transco, which in turn is connected to the National Grid, ensuring efficient and widespread distribution of the generated electricity.
-        </p>
-      </motion.div>
+      <div className="grid-2" style={{ marginTop: '4rem', alignItems: 'center' }}>
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="glass-panel"
+          style={{ padding: '3rem' }}
+        >
+          <h2 style={{ color: 'var(--accent-orange)', marginBottom: '1.5rem' }}>Technical Architecture</h2>
+          <p>
+            The proposed 2x260 MW coal-based thermal power station incorporates state-of-the-art engineering, procurement, and construction (EPC) standards. 
+          </p>
+          <p>
+            <strong>Power Evacuation:</strong> The project is designed to international and Indian standards, and will pump power directly into the 400 KV system of AP Transco, which in turn connects to the National Grid.
+          </p>
+          <p>
+            <strong>Fuel Logistics:</strong> Imported coal will be transported on self-discharging bulk carriers fitted with high-speed cranes and clamshell grabs. The coal will be discharged to barges for transfer to a dedicated unloading jetty.
+          </p>
+          <p>
+            <strong>Cooling and Water:</strong> The project utilizes a sea water cooling tower system for turbine condensers, minimizing the thermal impact on coastal waters. Sweet water requirements will be met entirely by desalinating sea water.
+          </p>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
+          <img 
+            src="/images/project_1.jpg" 
+            alt="Technical Infrastructure" 
+            style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
+          />
+        </motion.div>
+      </div>
     </div>
   );
 }
