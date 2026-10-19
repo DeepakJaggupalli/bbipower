@@ -28,8 +28,8 @@ export default function About() {
           style={{ display: 'flex', alignItems: 'center' }}
         >
           <img 
-            src="/images/energy_utilities.jpg" 
-            alt="Power Plant Overview" 
+            src="/images/logo.jpg" 
+            alt="BBI Power Logo" 
             style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
           />
         </motion.div>
