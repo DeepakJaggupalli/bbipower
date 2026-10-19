@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Users } from 'lucide-react';
 import './About.css';
 
 export default function About() {
