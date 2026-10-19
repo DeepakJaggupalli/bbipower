@@ -78,7 +78,7 @@ export default function Project() {
           viewport={{ once: true }}
         >
           <img 
-            src="/images/project_1.jpg" 
+            src="/images/plant_engineering.jpg" 
             alt="Technical Infrastructure" 
             style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
           />

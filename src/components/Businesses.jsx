@@ -40,14 +40,14 @@ export default function Businesses() {
       id: 'energy',
       title: 'Energy & Utilities',
       desc: 'Anchored by the flagship 520 MW (2x260 MW) thermal power generation facility in Krishnapatnam, providing reliable baseload power to the national grid.',
-      image: '/images/project_1.jpg',
+      image: '/images/energy_utilities.jpg',
       tags: ['520 MW Power Plant', '400 KV Grid Evacuation', 'Supercritical Boilers', 'Seawater Desalination']
     },
     {
       id: 'logistics',
       title: 'Transport & Logistics',
       desc: 'Integrated marine and overland bulk cargo transport, deepwater jetty facilities, and high-speed mechanical conveyors engineered to international standards.',
-      image: '/images/project_2.jpg',
+      image: '/images/transport_logistics.jpg',
       tags: ['Deepwater Jetties', 'High-Speed Conveyors', 'Bulk Cargo Handling', 'Supply Fleet']
     }
   ];
@@ -57,10 +57,10 @@ export default function Businesses() {
     { name: 'BBI Technologies & IT Solutions', image: '/images/it_services.jpg', sector: 'Information Technology' },
     { name: 'BBI Mining & Natural Resources', image: '/images/mines_minerals.jpg', sector: 'Mines & Minerals' },
     { name: 'BBI Petroleum & Gas Exploration Ltd', image: '/images/oil_gas.jpg', sector: 'Oil & Gas Exploration' },
-    { name: 'BBI Power Krishnapatnam Company', image: '/images/project_1.jpg', sector: 'Thermal Energy (520 MW)' },
-    { name: 'BBI Maritime Ports & Logistics', image: '/images/project_2.jpg', sector: 'Ports & Logistics' },
-    { name: 'BBI Desalination & Utilities Ltd', image: '/images/hero_bg.jpg', sector: 'Water & Utilities' },
-    { name: 'BBI Capital & Energy Ventures', image: '/images/project_3.jpg', sector: 'Strategic Ventures' }
+    { name: 'BBI Power Krishnapatnam Company', image: '/images/energy_utilities.jpg', sector: 'Thermal Energy (520 MW)' },
+    { name: 'BBI Maritime Ports & Logistics', image: '/images/transport_logistics.jpg', sector: 'Ports & Logistics' },
+    { name: 'BBI Desalination & Utilities Ltd', image: '/images/energy_utilities.jpg', sector: 'Water & Utilities' },
+    { name: 'BBI Capital & Energy Ventures', image: '/images/oil_gas.jpg', sector: 'Strategic Ventures' }
   ];
 
   const currentVertical = verticals.find(v => v.id === activeVertical) || verticals[0];

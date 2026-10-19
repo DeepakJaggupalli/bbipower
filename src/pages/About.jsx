@@ -28,7 +28,7 @@ export default function About() {
           style={{ display: 'flex', alignItems: 'center' }}
         >
           <img 
-            src="/images/project_2.jpg" 
+            src="/images/energy_utilities.jpg" 
             alt="Power Plant Overview" 
             style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
           />
