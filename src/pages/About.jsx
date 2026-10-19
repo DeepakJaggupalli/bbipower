@@ -4,6 +4,7 @@ import './About.css';
 export default function About() {
   const directors = [
     { name: "Subramanyam Kassetty", role: "Managing Director", image: "/images/subrahmanyam_new.jpg" },
+    { name: "Kasi Lalith", role: "Director", image: "/images/kasi_lalith.jpg", objectPosition: "center 22%" },
     { name: "K. V. Mukesh Babu", role: "Director", image: "/images/k_mukesh.png" },
     { name: "K. V. Chaitanya", role: "Director", image: "/images/kv_chaitanya.png" },
     { name: "Sagi Ramesh Babu", role: "Director", image: "/images/sagi_ramesh_babu.jpg" }
@@ -60,10 +61,15 @@ export default function About() {
           <p>Guided by experienced leadership.</p>
         </div>
         
-        <div className="grid-2 mt-3">
+        <div className="directors-grid mt-3">
           {directors.map((director, index) => (
             <div key={index} className="director-card">
-              <img src={director.image} alt={director.name} className="director-img" />
+              <img 
+                src={director.image} 
+                alt={director.name} 
+                className="director-img" 
+                style={director.objectPosition ? { objectPosition: director.objectPosition } : {}}
+              />
               <h3>{director.name}</h3>
               <span className="role">{director.role}</span>
             </div>
