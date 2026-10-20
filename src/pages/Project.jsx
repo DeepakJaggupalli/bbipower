@@ -26,6 +26,16 @@ export default function Project() {
       image: "/images/power_cooling_towers_aerial.jpg"
     },
     {
+      title: "Isometric Plant Architecture",
+      subtitle: "Boiler, Scrubbers & City Grid Connection",
+      image: "/images/power_plant_isometric_grid.png"
+    },
+    {
+      title: "Coal-to-Power Design Flow",
+      subtitle: "Pulveriser, Boiler, Stack & Substation",
+      image: "/images/power_plant_design_schematic.png"
+    },
+    {
       title: "Turbine Generator Hall",
       subtitle: "Supercritical Multi-Stage Steam Turbines",
       image: "/images/plant_engineering.jpg"
@@ -39,11 +49,50 @@ export default function Project() {
 
   const schematics = [
     {
+      id: 'isometric',
+      title: 'Isometric Plant & Grid Layout',
+      tag: 'Isometric 3D Process Model',
+      image: '/images/power_plant_isometric_grid.png',
+      caption: 'Full Isometric Flow: Coal Handling to Boiler, Turbines, Scrubber & Grid',
+      details: [
+        { label: 'Combustion & Boiler Island', text: 'Finely pulverized coal combusts efficiently in the furnace, heating feedwater into supercritical high-pressure steam.' },
+        { label: 'Denitrification System (SCR)', text: 'Selective catalytic reduction system neutralizing nitrogen oxides prior to flue gas passage.' },
+        { label: 'Dust Collector & Desulphurisation', text: 'High-voltage electrostatic precipitators and limestone scrubbers eliminating particulates and SO2.' },
+        { label: 'Steam Turbine & City Grid', text: 'Multi-stage turbine drives the electrical generator, supplying high-voltage power to regional and urban grids.' }
+      ]
+    },
+    {
+      id: 'design',
+      title: 'Coal-to-Power Design Flow',
+      tag: 'Engineering Flow Diagram',
+      image: '/images/power_plant_design_schematic.png',
+      caption: 'Design of a Coal-Fired Power Plant (World Coal Association)',
+      details: [
+        { label: 'Coal Supply & Pulveriser Mill', text: 'Automated conveyor feeds raw coal into ball pulverisers, creating fine coal dust for complete combustion.' },
+        { label: 'Water Purification & Boiler', text: 'Ultra-pure demineralized feedwater circulates through boiler tubes, producing high-enthalpy steam.' },
+        { label: 'Turbine & Condenser Loop', text: 'Expanding steam spins the turbine; exhausted steam condenses back to water via sea-cooling.' },
+        { label: 'Substation & Step-Up Transformer', text: 'Substation steps up generation voltage for efficient long-distance transmission over 400KV grid pylons.' }
+      ]
+    },
+    {
+      id: 'elevation',
+      title: 'Turbine & Cooling Elevation',
+      tag: 'Cross-Section Elevation Model',
+      image: '/images/power_plant_elevation_model.png',
+      caption: 'Power Plant Elevation Cross-Section & Condenser Cooling Loop (CO2CRC)',
+      details: [
+        { label: 'Furnace & Exhaust Chimney', text: 'Furnace creates thermal energy; flue gases exit through stack with continuous emission monitoring.' },
+        { label: 'Turbine-Generator Set', text: 'Enclosed turbine hall houses tandem high-pressure, intermediate-pressure, and low-pressure turbines.' },
+        { label: 'Condenser Cooling Water Circuit', text: 'Circulating cooling water carries rejected heat directly to the hyperbolic cooling tower.' },
+        { label: 'Hyperbolic Natural-Draft Tower', text: 'Natural draft pulls ambient air upward, discharging only harmless water vapor into the atmosphere.' }
+      ]
+    },
+    {
       id: 'process',
       title: 'Thermodynamic Cycle Model',
       tag: 'Color Process Schematic',
       image: '/images/power_plant_schematic_color.png',
-      caption: 'Full-Process Thermodynamic Cycle (Plant Operations Flow)',
+      caption: 'Thermodynamic Process Flow (Plant Scherer Process Model)',
       details: [
         { label: 'Pulverized Coal Combustion', text: 'Finely ground coal fuels the boiler furnace, converting purified water to high-pressure steam.' },
         { label: 'Multi-Stage Steam Turbine', text: 'Supercritical steam drives the high, intermediate, and low-pressure turbine rotors.' },
@@ -54,9 +103,9 @@ export default function Project() {
     {
       id: 'engineering',
       title: 'Flue Gas & Emission Flowchart',
-      tag: 'Engineering Blueprint',
+      tag: 'Engineering Flowchart',
       image: '/images/power_plant_engineering_flowchart.png',
-      caption: 'Electrostatic Precipitator & SO2 Scrubber System Flowchart',
+      caption: 'Electrostatic Precipitator & SO2 Scrubber System Flowchart (Masters 1998)',
       details: [
         { label: 'Electrostatic Precipitator (ESP)', text: 'High-voltage electric fields capture 99.8%+ of fly-ash particulates prior to chimney discharge.' },
         { label: 'Limestone SO2 Scrubber', text: 'Flue gas desulphurization (FGD) reacts SO2 with limestone slurry to yield eco-neutral synthetic gypsum.' },

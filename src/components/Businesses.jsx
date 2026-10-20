@@ -176,6 +176,27 @@ export default function Businesses() {
           desc: 'High-capacity hyperbolic natural-draft cooling towers engineered for maximum condenser heat dissipation with sea water cooling.'
         },
         {
+          id: 'isometric-layout',
+          name: 'Isometric Plant Flow',
+          image: '/images/power_plant_isometric_grid.png',
+          caption: 'Isometric Process Flow: Boiler to Turbines & Grid',
+          desc: 'Comprehensive 3D layout showing coal combustion, denitrification, flue gas desulphurization, turbine hall, and power delivery to urban centers.'
+        },
+        {
+          id: 'coal-power-design',
+          name: 'Plant Design Schematic',
+          image: '/images/power_plant_design_schematic.png',
+          caption: 'Coal-to-Power Station Engineering Blueprint',
+          desc: 'Detailed flow from automated coal conveyor and ball pulverisers through steam boiler, multi-stage turbines, and 400KV grid substation.'
+        },
+        {
+          id: 'elevation-model',
+          name: 'Turbine & Condenser Loop',
+          image: '/images/power_plant_elevation_model.png',
+          caption: 'Turbine-Generator & Condenser Cooling Elevation Model',
+          desc: 'Cross-section engineering showing steam turbine vacuum condensation, water recovery, and natural-draft cooling circulation.'
+        },
+        {
           id: 'aerial-facility',
           name: 'Aerial Plant Layout',
           image: '/images/power_cooling_towers_aerial.jpg',
@@ -184,17 +205,10 @@ export default function Businesses() {
         },
         {
           id: 'schematic-process',
-          name: 'Process Schematic',
+          name: 'Process Cycle',
           image: '/images/power_plant_schematic_color.png',
           caption: 'Complete Thermodynamic Generation Process Flow',
           desc: 'End-to-end generation cycle from coal boiler firing to steam turbines, condenser cooling, and 400KV grid transformer step-up.'
-        },
-        {
-          id: 'engineering-flowchart',
-          name: 'Emission Control Flowchart',
-          image: '/images/power_plant_engineering_flowchart.png',
-          caption: 'Technical Engineering Diagram & Flue Gas Scrubbers',
-          desc: 'Advanced environmental layout including electrostatic precipitators for fly-ash control and limestone SO2 scrubbers.'
         },
         {
           id: 'turbine-hall',
