@@ -88,11 +88,11 @@ export default function Footer() {
 
           {/* Links Column 4: Contact & Investors */}
           <div className="footer-links-col">
-            <h4>Investors & Banking</h4>
+            <h4>Investors & Contact</h4>
             <ul>
               <li><a href="#project">Project Financials (~₹4,900 Cr)</a></li>
               <li><a href="#project">75:25 Debt-Equity Architecture</a></li>
-              <li><a href="#contact">ICICI Bank Account Details</a></li>
+              <li><a href="#contact">Office & Branch Address</a></li>
               <li><a href="#contact">Direct WhatsApp Desk</a></li>
             </ul>
           </div>

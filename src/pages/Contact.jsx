@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Landmark } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import './Contact.css';
 
 export default function Contact() {
@@ -27,38 +27,18 @@ export default function Contact() {
           <p style={{ color: 'rgba(255,255,255,0.9)' }}>Get in touch with BBI Power Krishnapatnam Company.</p>
         </motion.div>
 
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="glass-panel"
-          style={{ padding: '3rem' }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-            <Landmark style={{ color: 'var(--accent-orange)' }} size={32} />
-            <h2 style={{ margin: 0 }}>Bank Details</h2>
-          </div>
-          
-          <div style={{ marginBottom: '1.5rem' }}>
-            <strong style={{ color: 'var(--text-primary)' }}>Bank Name:</strong> 
-            <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>ICICI Bank</p>
-          </div>
-          
-          <div style={{ marginBottom: '1.5rem' }}>
-            <strong style={{ color: 'var(--text-primary)' }}>Account Name:</strong> 
-            <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>BBI POWER KRISHNAPATNAM COMPANY</p>
-          </div>
-
-          <div style={{ marginBottom: '1.5rem' }}>
-            <strong style={{ color: 'var(--text-primary)' }}>Account Number:</strong> 
-            <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>236605000928</p>
-          </div>
-
-          <div style={{ marginBottom: '1.5rem' }}>
-            <strong style={{ color: 'var(--text-primary)' }}>IFSC Code:</strong> 
-            <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>ICIC0002366</p>
-          </div>
+        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-panel"
+            style={{ padding: '3rem' }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
+              <MapPin style={{ color: 'var(--accent-orange)' }} size={32} />
+              <h2 style={{ margin: 0 }}>Office & Branch Address</h2>
+            </div>
 
           <div>
             <strong style={{ color: 'var(--text-primary)' }}>Branch Address:</strong> 
