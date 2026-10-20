@@ -91,6 +91,306 @@
   font-size: 1.5rem;
 }
 
+.feature-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.25rem;
+  background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+  color: #ffffff !important;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 1.25rem;
+}
+
+.feature-card-btn:hover {
+  background: linear-gradient(135deg, #ea580c, #c2410c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.5);
+}
+
+/* Brief Note Dossier Modal */
+.brief-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.brief-modal {
+  background: #ffffff;
+  border-radius: 24px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #1e293b;
+}
+
+.brief-modal-header {
+  padding: 1.75rem 2rem 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+}
+
+.brief-modal-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brief-modal-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brief-modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(234, 88, 12, 0.1);
+  color: #ea580c;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.brief-modal-brand h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.brief-modal-brand p {
+  margin: 0.15rem 0 0 0;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.brief-modal-close {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.brief-modal-close:hover {
+  background: #cbd5e1;
+  color: #0f172a;
+  transform: rotate(90deg);
+}
+
+/* Modal Nav Tabs */
+.brief-modal-tabs {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  scrollbar-width: none;
+}
+
+.brief-tab-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.brief-tab-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.brief-tab-btn.active {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+  border-color: rgba(2, 132, 199, 0.25);
+  font-weight: 700;
+}
+
+/* Modal Body */
+.brief-modal-body {
+  padding: 2rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.brief-content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.brief-section-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.brief-callout {
+  background: #f8fafc;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.brief-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.brief-metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+}
+
+.brief-metric-card .metric-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.brief-metric-card .metric-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 0.25rem;
+}
+
+.brief-metric-card .metric-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* Brief Timeline in Tab 4 */
+.brief-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.brief-timeline-card {
+  border-left: 3px solid #ea580c;
+  background: #f8fafc;
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  border-right: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.brief-timeline-card .card-date {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #ea580c;
+  text-transform: uppercase;
+}
+
+.brief-timeline-card .card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0.25rem 0;
+}
+
+.brief-timeline-card .card-body {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Modal Footer */
+.brief-modal-footer {
+  padding: 1.25rem 2rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brief-pdf-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+  transition: all 0.25s ease;
+}
+
+.brief-pdf-action:hover {
+  background: linear-gradient(135deg, #0369a1, #075985);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.45);
+}
+
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
@@ -100,5 +400,26 @@
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
+  }
+  .brief-modal {
+    padding: 0;
+  }
+  .brief-modal-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .brief-modal-body {
+    padding: 1.25rem;
+  }
+  .brief-modal-footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .brief-pdf-action {
+    width: 100%;
+    justify-content: center;
   }
 }
