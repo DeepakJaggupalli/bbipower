@@ -52,7 +52,7 @@ export default function Contact() {
           <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--border-light)' }}>
             <h3 style={{ marginBottom: '1rem' }}>Get in touch with us</h3>
             <a 
-              href="https://wa.me/917416966659" 
+              href="https://wa.me/917661099997" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="whatsapp-btn"
@@ -62,7 +62,7 @@ export default function Contact() {
                 alt="WhatsApp" 
                 style={{ width: '24px', height: '24px' }}
               />
-              Chat with Ramesh Babu
+              Chat with Subramanyam Kassetty
             </a>
           </div>
         </motion.div>

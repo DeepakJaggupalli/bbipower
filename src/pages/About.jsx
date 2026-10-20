@@ -38,8 +38,36 @@ export default function About() {
         "Responsible Business Practices & Long-term Governance"
       ]
     },
-    { name: "K. V. Mukesh Babu", role: "Director", affiliation: "BBI Power Board", image: "/images/k_mukesh.png" },
-    { name: "K. V. Chaitanya", role: "Director", affiliation: "BBI Power Board", image: "/images/kv_chaitanya.png" },
+    { 
+      name: "K. V. Mukesh Babu, B.Tech.", 
+      role: "Director & CFO", 
+      affiliation: "CFO & Director, BBI Power", 
+      image: "/images/k_mukesh.png",
+      resumePdf: "/KV_Mukesh_Babu_Executive_Profile.pdf",
+      btnText: "View Profile",
+      bio: "K. V. Mukesh Babu, B.Tech., serves as Director and Chief Financial Officer (CFO) of BBI Power. As a technical graduate, he has been deeply involved in this Power Sector initiative alongside Mr. Subramanyam from day one. In fact, he is one of the key instrumental leaders who motivated the vision of stepping into the large-scale Power Generation project business. He has been an active professional throughout the total evolution of the project, identifying the right resources for the overall requirements of the Power Project. Crucial segments, including licenses and permissions with statutory governmental and non-governmental bodies, have been tactfully spearheaded through his technical and regulatory expertise. As CFO of the company, his strategic involvement in financial governance and capital allocation to achieve the organization's objectives remains highly accountable, steering BBI Power into the future with vigor and vibrancy.",
+      pillars: [
+        "Pioneer of BBI Power Generation Initiative",
+        "CFO & Strategic Financial Governance",
+        "Statutory Clearances & Regulatory Liaison",
+        "Resource Mobilization & Technical Leadership"
+      ]
+    },
+    { 
+      name: "K. V. Chaitanya, B.Sc.", 
+      role: "Director", 
+      affiliation: "Head of Designing, Mapping & Ad-Works", 
+      image: "/images/kv_chaitanya.png",
+      resumePdf: "/KV_Chaitanya_Executive_Profile.pdf",
+      btnText: "View Profile",
+      bio: "K. V. Chaitanya, B.Sc. (Statistics), serves as Director of BBI Power, leading the disciplines of Designing, Mapping, and Ad-Works. He delivers marvelous and outstanding creative and technical works required by the organization from time to time. Having been adorned with numerous awards and accolades during his graduation for his excellent performance in project architecture and analytics, his services to BBI Power are exceptionally prompt, highly promotional, and widely recognized across the board. His creative vision and spatial mapping expertise ensure that all engineering, branding, and promotional presentations communicate the highest echelon of corporate excellence.",
+      pillars: [
+        "B.Sc. Statistics & Analytical Modeling",
+        "Technical Designing, Spatial Mapping & CAD",
+        "Creative Brand Direction & Corporate Ad-Works",
+        "Award-Winning Project Execution & Recognition"
+      ]
+    },
     { 
       name: "Sagi Ramesh Babu", 
       role: "Director", 
