@@ -136,21 +136,35 @@ export default function Businesses() {
       title: 'Energy & Utilities',
       badge: 'Flagship Core Project (520 MW)',
       desc: 'Anchored by the flagship 520 MW (2x260 MW) thermal power generation facility in Krishnapatnam, providing reliable baseload power to the national grid.',
-      thumbnail: '/images/energy_utilities.jpg',
+      thumbnail: '/images/power_cooling_towers_wide.jpg',
       slides: [
         {
-          id: 'power-plant',
-          name: '520 MW Power Plant',
-          image: '/images/energy_utilities.jpg',
-          caption: 'Krishnapatnam 520 MW Thermal Power Station',
-          desc: 'Our flagship 2x260 MW supercritical power plant featuring advanced cooling towers and high-voltage 400KV grid integration.'
+          id: 'power-plant-towers',
+          name: 'Cooling Towers',
+          image: '/images/power_cooling_towers_wide.jpg',
+          caption: '520 MW Hyperboloid Seawater Cooling Towers',
+          desc: 'High-capacity hyperbolic natural-draft cooling towers engineered for maximum condenser heat dissipation with sea water cooling.'
         },
         {
-          id: 'desalination',
-          name: 'Desalination Plant',
-          image: '/images/energy_desalination.jpg',
-          caption: 'Coastal Seawater Reverse Osmosis Desalination',
-          desc: 'Eco-conscious on-site desalination infrastructure providing 100% of industrial and drinking water directly from the Bay of Bengal.'
+          id: 'aerial-facility',
+          name: 'Aerial Plant Layout',
+          image: '/images/power_cooling_towers_aerial.jpg',
+          caption: 'Krishnapatnam Thermal Power Station Complex',
+          desc: 'Aerial perspective of the power complex showing cooling towers, circulation canals, and high-efficiency spray ponds.'
+        },
+        {
+          id: 'schematic-process',
+          name: 'Process Schematic',
+          image: '/images/power_plant_schematic_color.png',
+          caption: 'Complete Thermodynamic Generation Process Flow',
+          desc: 'End-to-end generation cycle from coal boiler firing to steam turbines, condenser cooling, and 400KV grid transformer step-up.'
+        },
+        {
+          id: 'engineering-flowchart',
+          name: 'Emission Control Flowchart',
+          image: '/images/power_plant_engineering_flowchart.png',
+          caption: 'Technical Engineering Diagram & Flue Gas Scrubbers',
+          desc: 'Advanced environmental layout including electrostatic precipitators for fly-ash control and limestone SO2 scrubbers.'
         },
         {
           id: 'turbine-hall',
@@ -158,6 +172,13 @@ export default function Businesses() {
           image: '/images/plant_engineering.jpg',
           caption: 'Supercritical Steam Turbine & Generator EPC',
           desc: 'Precision engineered turbine hall featuring high-pressure turbine rotors and electrical generator sets built to global standards.'
+        },
+        {
+          id: 'desalination',
+          name: 'Desalination Plant',
+          image: '/images/energy_desalination.jpg',
+          caption: 'Coastal Seawater Reverse Osmosis Desalination',
+          desc: 'Eco-conscious on-site desalination infrastructure providing 100% of industrial and drinking water directly from the Bay of Bengal.'
         }
       ]
     },
@@ -194,7 +215,7 @@ export default function Businesses() {
   ];
 
   const entities = [
-    { name: 'BBI Power Krishnapatnam Company', image: '/images/energy_utilities.jpg', sector: 'Flagship Thermal Power (520 MW)', status: 'Core Flagship' },
+    { name: 'BBI Power Krishnapatnam Company', image: '/images/power_cooling_towers_wide.jpg', sector: 'Flagship Thermal Power (520 MW)', status: 'Core Flagship' },
     { name: 'BBI Infrastructure Projects Ltd', image: '/images/infrastructure.jpg', sector: 'Mega Infrastructure & Transit', status: 'Upcoming Project' },
     { name: 'BBI Technologies & IT Solutions', image: '/images/it_services.jpg', sector: 'Information Technology & AI', status: 'Upcoming Project' },
     { name: 'BBI Mining & Natural Resources', image: '/images/mines_minerals.jpg', sector: 'Mineral Extraction & Logistics', status: 'Upcoming Project' },
