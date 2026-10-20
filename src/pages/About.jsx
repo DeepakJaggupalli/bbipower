@@ -13,8 +13,14 @@ export default function About() {
       affiliation: "BBI Power Krishnapatnam Co. Ltd.",
       image: "/images/subrahmanyam_new.jpg",
       resumePdf: "/Subramanyam_Executive_Profile.pdf",
-      btnText: "View Resume",
-      bio: "Subramanyam Kassetty leads BBI Power Krishnapatnam Co. Ltd. as Managing Director, spearheading the strategic development of India's landmark 2x525 MW Krishnapatnam Thermal Power Project, comprehensive statutory clearances, infrastructure execution, and future clean energy transformation."
+      btnText: "View Profile",
+      bio: "Subramanyam Kassetty is a seasoned entrepreneur and business leader with over 40 years of experience across diverse industries, including power generation, real estate, infrastructure, agriculture, pharmaceuticals, film distribution, and consumer products. With a strong vision and entrepreneurial spirit, he has established and led multiple ventures, driving business growth through strategic planning, innovation, and operational excellence. His expertise in identifying market opportunities, building high-performing teams, securing investments, and developing strategic partnerships has contributed to the success of his business endeavors. His commitment to quality, integrity, and sustainable growth continues to guide his leadership and business philosophy, reflecting a legacy of entrepreneurship, diversification, and long-term value creation.",
+      pillars: [
+        "40+ Years Multidisciplinary Leadership",
+        "Power Generation & Large-Scale Infrastructure",
+        "Cross-Industry Diversification & Innovation",
+        "Strategic Partnerships & Investment Mobilization"
+      ]
     },
     { 
       name: "Kasi Lalith", 
