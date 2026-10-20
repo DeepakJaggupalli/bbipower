@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion';
+import { FileText } from 'lucide-react';
 import './About.css';
 
 export default function About() {
   const directors = [
-    { name: "Subramanyam Kassetty", role: "Managing Director", image: "/images/subrahmanyam_new.jpg" },
+    { 
+      name: "Subramanyam Kassetty", 
+      role: "Managing Director", 
+      image: "/images/subrahmanyam_new.jpg",
+      resumePdf: "/Subramanyam_Executive_Profile.pdf"
+    },
     { name: "Kasi Lalith", role: "Director", image: "/images/kasi_lalith.jpg", objectPosition: "center 22%" },
     { name: "K. V. Mukesh Babu", role: "Director", image: "/images/k_mukesh.png" },
     { name: "K. V. Chaitanya", role: "Director", image: "/images/kv_chaitanya.png" },
@@ -72,6 +78,18 @@ export default function About() {
               />
               <h3>{director.name}</h3>
               <span className="role">{director.role}</span>
+              {director.resumePdf && (
+                <div style={{ marginTop: '0.85rem' }}>
+                  <a 
+                    href={director.resumePdf} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="director-resume-btn"
+                  >
+                    <FileText size={14} /> View Resume
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

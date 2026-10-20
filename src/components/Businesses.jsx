@@ -86,6 +86,36 @@ export default function Businesses() {
       ]
     },
     {
+      id: 'semiconductors',
+      title: 'AI & Semiconductors Fab',
+      badge: 'Upcoming Hi-Tech Fab',
+      desc: 'Pioneering India\'s advanced microelectronics frontier with a state-of-the-art semiconductor fabrication factory, AI chip foundries, cleanrooms, and neural processor packaging.',
+      thumbnail: '/images/semiconductor_cleanroom_fab.jpg',
+      slides: [
+        {
+          id: 'ai-silicon-wafer',
+          name: 'AI Silicon Wafers',
+          image: '/images/semiconductor_ai_wafer.jpg',
+          caption: 'Next-Gen AI Microchips & Neural Silicon Wafers',
+          desc: 'High-precision photolithography and wafer patterning engineered for next-generation AI accelerators, neural processing units (NPUs), and microelectronics.'
+        },
+        {
+          id: 'cleanroom-fab',
+          name: 'Cleanroom Fab Plant',
+          image: '/images/semiconductor_cleanroom_fab.jpg',
+          caption: 'Class-1 Automated Semiconductor Cleanroom Plant',
+          desc: 'Automated robotic wafer handling, sub-micron air filtration corridors, and precision chemical delivery systems built for high-yield chip fabrication.'
+        },
+        {
+          id: 'mega-foundry',
+          name: 'Mega Fab Campus',
+          image: '/images/semiconductor_ai_foundry.jpg',
+          caption: 'Mega-Scale AI Semiconductor Manufacturing Campus',
+          desc: 'Integrated microelectronics foundry campus featuring extreme ultraviolet (EUV) lithography bays, dedicated sub-stations, and advanced 3D packaging facilities.'
+        }
+      ]
+    },
+    {
       id: 'mines',
       title: 'Mines & Minerals',
       badge: 'Upcoming Resource Projects',
@@ -218,6 +248,7 @@ export default function Businesses() {
     { name: 'BBI Power Krishnapatnam Company', image: '/images/power_cooling_towers_wide.jpg', sector: 'Flagship Thermal Power (520 MW)', status: 'Core Flagship' },
     { name: 'BBI Infrastructure Projects Ltd', image: '/images/infrastructure.jpg', sector: 'Mega Infrastructure & Transit', status: 'Upcoming Project' },
     { name: 'BBI Technologies & IT Solutions', image: '/images/it_services.jpg', sector: 'Information Technology & AI', status: 'Upcoming Project' },
+    { name: 'BBI Semiconductors & AI Technologies Ltd', image: '/images/semiconductor_ai_wafer.jpg', sector: 'AI Semiconductor Fab & Microelectronics', status: 'Upcoming Project' },
     { name: 'BBI Mining & Natural Resources', image: '/images/mines_minerals.jpg', sector: 'Mineral Extraction & Logistics', status: 'Upcoming Project' },
     { name: 'BBI Petroleum & Gas Exploration Ltd', image: '/images/oil_gas.jpg', sector: 'Offshore & LNG Exploration', status: 'Upcoming Project' },
     { name: 'BBI Maritime Ports & Logistics', image: '/images/transport_logistics.jpg', sector: 'Deepwater Ports & Freight', status: 'Upcoming Project' },

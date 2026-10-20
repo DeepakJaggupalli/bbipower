@@ -63,10 +63,11 @@ export default function Footer() {
 
           {/* Links Column 2: Businesses */}
           <div className="footer-links-col">
-            <h4>Businesses</h4>
+            <h4>Upcoming Verticals</h4>
             <ul>
               <li><a href="#businesses">Infrastructure</a></li>
               <li><a href="#businesses">Information Technology</a></li>
+              <li><a href="#businesses">AI & Semiconductors Fab</a></li>
               <li><a href="#businesses">Mines & Minerals</a></li>
               <li><a href="#businesses">Oil & Gas Exploration</a></li>
               <li><a href="#businesses">Energy & Utilities</a></li>
