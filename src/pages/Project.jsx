@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Settings, Droplet, Fuel, Activity, ZoomIn, X, Sliders, Layers } from 'lucide-react';
+import { Settings, Droplet, Fuel, Activity, ZoomIn, X, Sliders, Layers, FileText, ExternalLink, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
 import './Project.css';
 
 export default function Project() {
   const [activeSchematicTab, setActiveSchematicTab] = useState('process');
   const [modalImage, setModalImage] = useState(null);
+  const [showExactDocModal, setShowExactDocModal] = useState(false);
+  const [currentDocSlide, setCurrentDocSlide] = useState(1);
 
   const highlights = [
     { title: "Capacity", value: "520 MW (2 x 260 MW)", icon: <Activity /> },
@@ -133,24 +135,79 @@ export default function Project() {
 
       {/* 4 Highlight Stat Cards */}
       <div className="grid-2">
-        {highlights.map((item, index) => (
-          <motion.div 
-            key={index}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            className="glass-panel stat-highlight-card"
-          >
-            <div className="stat-icon-wrapper">
-              {item.icon}
-            </div>
-            <div>
-              <h3 className="stat-card-title">{item.title}</h3>
-              <p className="stat-card-value">{item.value}</p>
-            </div>
-          </motion.div>
-        ))}
+        {highlights.map((item, index) => {
+          const isCapacity = item.title === "Capacity";
+          if (isCapacity) {
+            return (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="glass-panel stat-highlight-card capacity-stat-card"
+                onClick={() => {
+                  window.open('/BBI_Power_Krishnapatnam_Brief_Note_Pages_1_12.pdf', '_blank');
+                }}
+                title="Click to open official 520 MW Brief Note (Exact Document Pages 1–12)"
+              >
+                <div className="stat-icon-wrapper capacity-icon-glow">
+                  {item.icon}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div className="capacity-header-row">
+                    <h3 className="stat-card-title">{item.title}</h3>
+                    <span className="capacity-badge-pill">
+                      <FileText size={12} /> Exact Document (Pages 1–12) <ExternalLink size={11} />
+                    </span>
+                  </div>
+                  <p className="stat-card-value capacity-value-highlight">{item.value}</p>
+                  <div className="capacity-action-row">
+                    <a 
+                      href="/BBI_Power_Krishnapatnam_Brief_Note_Pages_1_12.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="capacity-open-link"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink size={13} /> Open Exact Document (PDF)
+                    </a>
+                    <button 
+                      type="button" 
+                      className="capacity-view-slides-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentDocSlide(1);
+                        setShowExactDocModal(true);
+                      }}
+                    >
+                      <Eye size={13} /> View Slides (1–12)
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          }
+
+          return (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="glass-panel stat-highlight-card"
+            >
+              <div className="stat-icon-wrapper">
+                {item.icon}
+              </div>
+              <div>
+                <h3 className="stat-card-title">{item.title}</h3>
+                <p className="stat-card-value">{item.value}</p>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
 
       {/* Technical Architecture Overview */}
@@ -341,6 +398,109 @@ export default function Project() {
               </div>
             </motion.div>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Exact Document Slide Modal (Pages 1–12) */}
+      <AnimatePresence>
+        {showExactDocModal && (
+          <div className="exact-doc-modal-backdrop" onClick={() => setShowExactDocModal(false)}>
+            <motion.div 
+              className="exact-doc-modal"
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ duration: 0.25 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="exact-doc-header">
+                <div className="exact-doc-brand">
+                  <img src="/images/logo.jpg" alt="BBI Logo" className="exact-doc-logo" />
+                  <div>
+                    <span className="exact-doc-badge">
+                      <FileText size={12} /> Exact Presentation Document &bull; Slides 1–12
+                    </span>
+                    <h3>BBI Power Krishnapatnam Company — 520 MW Brief Note</h3>
+                    <p>Direct presentation document exact slide pages</p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <a 
+                    href="/BBI_Power_Krishnapatnam_Brief_Note_Pages_1_12.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="exact-doc-pdf-btn"
+                  >
+                    <FileText size={15} /> Open PDF <ExternalLink size={13} />
+                  </a>
+                  <button 
+                    type="button" 
+                    className="exact-doc-close-btn"
+                    onClick={() => setShowExactDocModal(false)}
+                    aria-label="Close"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Slide Display Area */}
+              <div className="exact-doc-slide-viewport">
+                <button 
+                  type="button" 
+                  className="exact-doc-nav-arrow prev"
+                  disabled={currentDocSlide === 1}
+                  onClick={() => setCurrentDocSlide(prev => Math.max(1, prev - 1))}
+                  aria-label="Previous slide"
+                >
+                  <ChevronLeft size={28} />
+                </button>
+
+                <div className="exact-doc-slide-container">
+                  <img 
+                    src={`/images/brief_note_slides/slide_${currentDocSlide}.png`} 
+                    alt={`Slide ${currentDocSlide} of 12`}
+                    className="exact-doc-slide-img" 
+                  />
+                  <div className="exact-doc-slide-footer-bar">
+                    <span>Page {currentDocSlide} of 12 (Slide {currentDocSlide} / 12)</span>
+                    <a 
+                      href={`/images/brief_note_slides/slide_${currentDocSlide}.png`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="exact-doc-zoom-link"
+                    >
+                      <ZoomIn size={14} /> Full Resolution
+                    </a>
+                  </div>
+                </div>
+
+                <button 
+                  type="button" 
+                  className="exact-doc-nav-arrow next"
+                  disabled={currentDocSlide === 12}
+                  onClick={() => setCurrentDocSlide(prev => Math.min(12, prev + 1))}
+                  aria-label="Next slide"
+                >
+                  <ChevronRight size={28} />
+                </button>
+              </div>
+
+              {/* Slide Thumbnail / Number Strip */}
+              <div className="exact-doc-strip">
+                {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => (
+                  <button
+                    key={num}
+                    type="button"
+                    className={`exact-doc-page-btn ${currentDocSlide === num ? 'active' : ''}`}
+                    onClick={() => setCurrentDocSlide(num)}
+                  >
+                    {num}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </div>

@@ -101,12 +101,12 @@ export default function About() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          style={{ display: 'flex', alignItems: 'center' }}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         >
           <img 
             src="/images/logo.jpg" 
             alt="BBI Power Logo" 
-            style={{ width: '100%', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}
+            style={{ width: '100%', maxWidth: '360px', borderRadius: '50%', boxShadow: '0 12px 36px rgba(0, 0, 0, 0.15)' }}
           />
         </motion.div>
         
